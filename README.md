@@ -47,8 +47,8 @@ Your friends:
 <img src="<%= asset_path('spacecat.jpg') %>">
 ```
 
-```css
-<!-- Make sure you're using a .SCSS file! -->
+```scss
+// Make sure you're using a .SCSS file!
 div {
   background-image: image-url("spacecat.jpg");
 }
