@@ -38,7 +38,7 @@ group :production do
 end
 ```
 
-By default, Rails will not serve your asset files because it assumes that you'll host them on a separate content directory network (like [AWS][5]).
+By default, Rails will not serve your asset files because it assumes that you'll host them on a separate content delivery network (like [AWS][5]).
 Because we want Heroku to serve up our local javascript files and stylesheets, this gem will allow that to happen.
 [5]: http://aws.amazon.com
 
