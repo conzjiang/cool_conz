@@ -1,7 +1,8 @@
 <h1>Conz's Cool Comments</h1>
+<a href="<%= new_comment_url %>">Add a new comment</a>
 
 <ul>
   <% @comments.each do |comment| %>
-  <li><%= comment.body %></li>
+  <li><a href="<%= comment_url(comment) %>"><%= comment.body %></a></li>
   <% end %>
 </ul>

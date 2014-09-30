@@ -1,0 +1,21 @@
+<h1>Edit Comment</h1>
+
+<% if flash[:errors] %>
+<ol class="errors">
+<% flash[:errors].each do |error| %>
+  <li><%= error %></li>
+<% end %>
+</ol>
+<% end %>
+
+<form class="other" action="<%= comment_url(@comment) %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="hidden" name="_method" value="put">
+
+  <div>
+    <label for="comment_body">Body</label>
+    <textarea name="comment[body]"><%= @comment.body %></textarea>
+  </div>
+
+  <button>Submit</button>
+</form>

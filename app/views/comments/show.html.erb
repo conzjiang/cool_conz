@@ -1,1 +1,18 @@
-<%= @comment.body %>
+<p><%= @comment.body %></p>
+
+<nav>
+  <a href="<%= comments_url %>">Back to all comments</a>
+
+  <a href="<%= edit_comment_url(@comment) %>">Edit comment</a>
+
+  <form class="destroy" action="<%= comment_url(@comment) %>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="delete">
+
+    <button>Delete comment????</button>
+  </form>
+</nav>
+
+<figure class="cool">
+  <figcaption>Cool comment, Conz!</figcaption>
+</figure>

@@ -1,4 +1,4 @@
-html, body, h1, ul, li {
+html, body, h1, a, ul, ol, li, p, figure, figcaption, form {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,14 +7,94 @@ html, body, h1, ul, li {
 
 body {
   font-family: sans-serif;
+  text-align: center;
+}
+
+textarea {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width: auto;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+button {
+  display: inline;
+  -webkit-appearance: none;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width: auto;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+
+
+form.other > button {
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 5px 10px;
+  background: #0c0;
+  font-size: 20px;
+  color: #fff;
+}
+
+form.other > button:hover {
+  background: green;
+}
+
+form.other > button:active {
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
 
 h1 {
   display: block;
   margin: 30px 0;
+  margin-bottom: 20px;
   font-weight: 600;
   text-align: center;
   font-size: 36px;
+}
+
+form {
+  display: inline;
+}
+
+form.destroy > button {
+}
+
+a,
+form.destroy > button {
+  display: inline-block;
+  margin: 2px 0;
+  padding: 1px 0;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+
+a:hover,
+form.destroy > button:hover {
+  margin-bottom: 1px;
+  border-bottom: 1px solid #000;
+}
+
+a:active,
+form.destroy > button:active {
+  padding-top: 2px;
+  padding-bottom: 0;
 }
 
 ul {
@@ -22,7 +102,10 @@ ul {
   width: 600px;
   height: 400px;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
   padding: 40px;
+  text-align: left;
   background-image: image-url("spacecat.jpg");
   background-size: cover;
   box-shadow: 5px 5px 10px #ccc;
@@ -36,6 +119,58 @@ li {
   cursor: default;
 }
 
+p {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+figure {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 20px auto;
+  color: #fff;
+  background-image: image-url("spacecat.jpg");
+  background-size: cover;
+}
+
+figcaption {
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+}
+
 .expand {
   font-size: 30px;
+}
+
+nav > a {
+  margin-right: 10px;
+}
+
+form.destroy > button:hover {
+  color: red;
+  border-color: red;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+textarea {
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+  border: 1px solid green;
+  display: inline-block;
+}
+
+ol.errors {
+  color: #f00;
+  list-style: none;
 }
