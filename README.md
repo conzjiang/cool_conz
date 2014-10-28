@@ -32,7 +32,7 @@ On the office computers, wipe out the current SSH keys with `rm ~/.ssh/id_*`. Th
 If you're on your **personal computer**, you don't want to delete your keys because they're most likely connected to your Github, so all you'll need to do is `heroku keys:add` if you haven't already added your keys.
 
 ## 4. Creating your Heroku app
-On Heroku, go to "Apps," then "Create a new app." After you've created the app, copy the Git URL and paste it to the end of this command (in place of "your-heroku-git-url-here"):
+On Heroku, click on the "+" in the top righthand corner to create a new app. After you've created the app, copy the Git URL and paste it to the end of this command (in place of "your-heroku-git-url-here"):
 
 ```bash
 git remote add heroku your-heroku-git-url-here
