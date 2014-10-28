@@ -40,7 +40,6 @@ button {
 }
 
 
-
 form.other > button {
   letter-spacing: 1px;
   font-weight: 600;
@@ -106,7 +105,7 @@ ul {
   margin-bottom: 50px;
   padding: 40px;
   text-align: left;
-  background-image: image-url("spacecat.jpg");
+  background-image: url("spacecat.jpg");
   background-size: cover;
   box-shadow: 5px 5px 10px #ccc;
   overflow: scroll;
@@ -131,7 +130,7 @@ figure {
   height: 150px;
   margin: 20px auto;
   color: #fff;
-  background-image: image-url("spacecat.jpg");
+  background-image: url("spacecat.jpg");
   background-size: cover;
 }
 
