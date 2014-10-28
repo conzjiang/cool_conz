@@ -32,7 +32,7 @@ On the office computers, wipe out the current SSH keys with `rm ~/.ssh/id_*`. Th
 If you're on your **personal computer**, you don't want to delete your keys because they're most likely connected to your Github, so all you'll need to do is `heroku keys:add` if you haven't already added your keys.
 
 ## 4. Creating your Heroku app
-On Heroku, click on the "+" in the top righthand corner to create a new app. After you've created the app, copy the Git URL and paste it to the end of this command (in place of "your-heroku-git-url-here"):
+On Heroku, click on the "+" in the top righthand corner to create a new app. After you've created the app, copy the Git URL (located under 'Settings') and paste it to the end of this command (in place of "your-heroku-git-url-here"):
 
 ```bash
 git remote add heroku your-heroku-git-url-here
@@ -81,7 +81,7 @@ If you have any new migrations (especially on your first time pushing to Heroku)
 
 If you want to use your seed file in production, `heroku run rake db:seed`.
 
-Other commands:
+Other useful commands:
 - `heroku run rails c`: Rails console in the production environment. Be careful making any changes here because they will apply to your live website!
 - `heroku logs` / `heroku logs -t`: Your Heroku server logs, so you can see the activity on your site. If you have "rails_12factor" installed, you will also get error displays, which is super useful in figuring out what might be causing parts of your site to be down. `heroku logs` will just display the most recent activity, while `heroku logs -t` will show you live coverage, exactly as the rails server does on localhost.
 
