@@ -4,10 +4,12 @@ Now that you've created a super cool web app, you want to show the world (see: e
 ## Summary
 1. Install Heroku toolbelt
 2. `heroku login`
-3. `rm ~/.ssh/id_*` when on the office computers + `heroku keys:add`
+3. `heroku keys:add`
+  - `rm ~/.ssh/id_*` when on the office computers
 4. `git remote add heroku heroku-git-url-here`
 5. `gem 'rails_12factor'`
-6. `git push heroku master` (+ `heroku run bundle exec rake db:migrate`)
+6. `git push heroku master`
+  - `heroku run bundle exec rake db:migrate`
 7. [Pingdom][7]
 
 ## 1. Heroku toolbelt
