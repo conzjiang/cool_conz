@@ -40,6 +40,12 @@ git remote add heroku your-heroku-git-url-here
 
 (This should look familiar!)
 
+This Heroku command also does the same thing with the name of your Heroku app:
+
+```bash
+heroku git:remote -a heroku-app-name-here
+```
+
 Don't worry too much about naming your app because you can always go back later and rename it in "Settings" on your app dashboard. However, if you do rename your app, you need to make sure to also change the url to the remote! (`git remote set-url heroku new-heroku-git-url-here`)
 
 ## 5. Serving assets
@@ -52,8 +58,10 @@ group :production do
 end
 ```
 
-By default, Rails will not serve your asset files because it assumes that you'll host them on a separate CDN (content delivery network, like [AWS][5]). Because we want Heroku to serve up our local javascript files and stylesheets, this gem will allow that to happen.
+By default, Rails will not serve your asset files because it assumes that you'll host them on a separate CDN (content delivery network, like [AWS][5]). Because we want Heroku to serve up our local javascript files and stylesheets, this gem will allow that to happen. 
 [5]: http://aws.amazon.com
+
+`rails_12factor` also provides your production server logs with detailed errors you're used to getting in your development logs.
 
 Your friends:
 ```html+erb
