@@ -92,6 +92,7 @@ If you want to use your seed file in production, `heroku run rake db:seed`.
 Other useful commands:
 - `heroku run rails c`: Rails console in the production environment. Be careful making any changes here because they will apply to your live website!
 - `heroku logs` / `heroku logs -t`: Your Heroku server logs, so you can see the activity on your site. If you have "rails_12factor" installed, you will also get error displays, which is super useful in figuring out what might be causing parts of your site to be down. `heroku logs` will just display the most recent activity, while `heroku logs -t` will show you live coverage, exactly as the rails server does on localhost.
+- `heroku restart`: Restarts your Heroku server. If everything looks absolutely fine and you definitely migrated and everything, sometimes your server just needs a restart.
 
 The [Heroku docs][6] have many other helpful tips!
 [6]: https://devcenter.heroku.com/
