@@ -100,6 +100,7 @@ The [Heroku docs][6] have many other helpful tips!
 ## 7. Pingdom
 Last but not least, Heroku will spin down your server if there isn't any activity in the last 30 minutes. Therefore, when someone visits your site after 30 minutes of inactivity, it will take much longer to load, which would be unfortunate if that someone was an employer, who most likely won't have the patience for or be particularly impressed with a slow-loading website.
 
-To avoid this problem, register your site with [Pingdom][7]! It is free and will make requests to your site every five minutes so that Heroku won't put your site to sleep.
+To avoid this problem, register your site with [Pingdom][7] or [Uptime Robot][8]! It is free and will make requests to your site every five minutes so that Heroku won't put your site to sleep.
 
 [7]: https://www.pingdom.com/free/
+[8]: http://uptimerobot.com/
