@@ -10,7 +10,7 @@ Now that you've created a super cool web app, you want to show the world (see: e
 5. `gem 'rails_12factor'`
 6. `git push heroku master`
   - `heroku run bundle exec rake db:migrate`
-7. [Pingdom][7]
+7. [Pingdom][7]/[Uptime Robot][8]
 
 ## 1. Heroku toolbelt
 First, if you haven't already, install the Heroku toolbelt onto your computer, which allows you to run Heroku commands from the terminal. There are two ways to install:
